@@ -1,0 +1,19 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      python: 3.7
+  pre_build:
+    commands:
+      - ls -al
+  build:
+    commands:
+      - sam build
+  post_build:
+    commands:
+      - ls -al
+artifacts:
+  type: zip
+  base-directory: .aws-sam/build/LambdaCode
+  files:
+    - '**/*'
