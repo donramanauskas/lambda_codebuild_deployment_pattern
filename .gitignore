@@ -7,8 +7,6 @@
 *.sam
 .aws-sam
 
-template.yml
-
 *.zip
 
 # .tfvars files
